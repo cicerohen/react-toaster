@@ -21,6 +21,8 @@ export const Toast = ({ id, type, text }: ToastType) => {
 
     const time = setTimeout(() => {
       console.log("finished");
+      // O afterLeave do headless não está funcionando, depois do timer também deve remover o toast do array
+      removeToast(id);
       setShow(false);
     }, 8000);
 
@@ -35,6 +37,7 @@ export const Toast = ({ id, type, text }: ToastType) => {
   };
 
   const afterLeave = () => {
+    console.log('after');
     setTimeout(() => {
       removeToast(id);
     }, 0);
