@@ -24,6 +24,7 @@ export const Toaster = () => {
     createPortal(
       <div className="fixed top-0 right-0 z-10 space-y-2 py-4">
         {toasts.slice(0, 5).map((toast) => {
+          console.log("sssss");
           return <Toast key={toast.id} {...toast} />;
         })}
       </div>,
