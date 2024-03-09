@@ -1,8 +1,6 @@
-# Playground React Toast
+# React Toaster
 
 A simple toaster created with React, Context API and TailwindCSS
-
-[Click here to see more examples](https://github.com/cicerohen/playground)
 
 ### Development
 
